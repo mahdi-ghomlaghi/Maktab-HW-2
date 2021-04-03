@@ -1,0 +1,321 @@
+/*--------------------GLOBAL--------------------*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    font-family: Josephin;
+    text-decoration: none;
+    list-style: none;
+}
+
+@font-face {
+    font-family: 'Josephin';
+    src: url('./josefin-sans/JosefinSans-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'JosephinThin';
+    src: url('./josefin-sans/JosefinSans-Thin.ttf');
+}
+
+.container {
+    width: 100%;
+    height: 95%;
+    margin: 0 auto;
+}
+
+
+/*--------------------GLOBAL==>END--------------------*/
+/*--------------------HEADER--------------------*/
+/*intro*/
+
+.header {
+    width: 95%;
+    height: 11rem;
+    margin: 0 auto;
+    /* why=margin-->tophead-->header */
+    padding: 1px;
+    /* background-color: red; */
+}
+
+.tophHead {
+    margin: 1rem auto;
+    margin-bottom: 0.3rem;
+    padding: 1rem;
+    height: 7rem;
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.socials {
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sMedia {
+    margin-right: 1.5rem;
+    font-size: 1.3rem;
+}
+
+.sMedia:last-child {
+    margin-right: 0;
+    font-size: 1.4rem;
+}
+
+.logo {
+    font-family: Josephin;
+    font-size: 3.6rem;
+    font-weight: 900;
+    letter-spacing: -1px;
+}
+
+.logo>span {
+    color: rgb(255, 72, 106);
+}
+
+.logo:hover {
+    font-family: Josephin;
+    font-size: 3.6rem;
+    font-weight: 900;
+    letter-spacing: -1px;
+    margin-bottom: 4px;
+    cursor: pointer;
+}
+
+.searchBtn {
+    width: 10%;
+    text-align: right;
+    margin-right: 0.7rem;
+
+
+}
+
+.searchBtn>button {
+    border: none;
+    outline: none;
+    background-color: white;
+
+}
+
+.searchIcon {
+
+    text-align: center;
+    width: 2.3rem;
+    padding: 0.7rem 0;
+    border-radius: 50px;
+    height: auto;
+    background-color: rgb(255, 72, 106);
+    font-size: small;
+    color: white;
+    cursor: pointer;
+}
+
+/*navigation*/
+.myNavBar {
+    width: 75%;
+    height: 1.5rem;
+    margin: 0rem auto;
+}
+
+.navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navItem {
+    margin: 0 0.9rem;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.navItem a {
+    color: black;
+}
+
+.navItem:first-child>a {
+    color: rgb(255, 72, 106);
+}
+
+.arrow {
+    font-size: 10px;
+}
+
+/*--------------------HEADER==>END--------------------*/
+/*--------------------MAIN--------------------*/
+
+
+.main {
+    width: 100%;
+    padding: 0 5px;
+    margin: 10px auto;
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+    /* align-items: center; */
+}
+
+.card {
+    height: 35rem;
+    width: 23%;
+    margin: 0 0.8rem 0.8rem;
+}
+
+.imageCard {
+    width: 100%;
+    background-image: url(./images/image1.jpg);
+    background-size: cover;
+    height: 65%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+
+
+
+
+/* .image {
+    width: 100%;
+    height: 21rem;
+} */
+
+.detail {
+    width: 45%;
+    height: 1.8rem;
+    border-radius: 15px;
+    background-color: rgb(113, 105, 254);
+    color: white;
+    font-size: 0.8rem;
+    margin: 1rem;
+    /*-------best way ???--------*/
+    /* position: relative;
+    float: right;
+    top: 10px;
+    right: 1rem; */
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+
+
+
+/* .textContainer {
+    margin: 1rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+} */
+
+.text {
+    width: 65%;
+    margin: 1rem;
+    background-color: white;
+    color: #000;
+    font-size: 1.5rem;
+    padding: 0.2rem;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+
+.row-1 {
+    margin: 1rem auto;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3px;
+}
+
+.auther {
+    width: 50%;
+    display: flex;
+
+    align-items: center;
+}
+
+.avatar {
+    width: 2.3rem;
+    height: 2.3rem;
+    border-radius: 50px;
+    margin-right: 5px;
+}
+
+
+
+/* .noghte {
+    color: rgb(255, 72, 106);
+    font-size: 2rem;
+    margin-right: 15px;
+    height: 50%;
+} */
+
+.date {
+    display: flex;
+}
+
+.row-2 {
+    display: flex;
+
+}
+
+.description {
+    text-align: center;
+    font-family: 'JosephinThin';
+    color: #000;
+    font-weight: 900;
+}
+
+.row-3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tag {
+    margin: 0.9rem;
+}
+
+.tagName {
+    padding-left: 4px;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.topArrow {
+
+    text-align: center;
+    width: 2.3rem;
+    padding: 0.7rem 0;
+    border-radius: 50px;
+    height: auto;
+    background-color: rgb(255, 72, 106);
+    font-size: small;
+    color: white;
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
