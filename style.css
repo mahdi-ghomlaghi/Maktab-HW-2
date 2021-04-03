@@ -1,0 +1,158 @@
+/*--------------------GLOBAL--------------------*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+
+}
+
+/*--------------------GLOBAL==>END--------------------*/
+
+
+.container {
+    width: 100%;
+    height: 100%;
+    background-color: #e3e4e5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*--HEADER--*/
+.signIN {
+    width: 35%;
+    height: 60vh;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.header {
+    width: 100%;
+    height: 35%;
+    /* border-radius: 10px 10px 0 0; */
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    position: relative;
+    background-color: rgba(19, 11, 65, 0.8);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+
+
+}
+
+.header::before {
+    content: "";
+    background-image: url(./images/background.jpg);
+    background-size: 100% 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.5;
+}
+
+.pageTitle {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    color: #fff;
+    font-size: 1.3rem;
+    z-index: 2;
+}
+
+/*--MAIN--*/
+.main {
+    width: 100%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.inputContainer {
+    width: 75%;
+    padding: 0.3rem;
+    margin: 0.8rem;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: baseline;
+}
+
+.lableInput {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.7rem;
+    font-weight: 550;
+    color: rgb(107, 106, 106);
+    margin-right: 0.5rem;
+}
+
+.inputs {
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 0.3rem;
+    border-bottom: 1px solid rgb(189, 189, 189);
+}
+
+.inputs::placeholder {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.7rem;
+    font-weight: 400;
+    color: rgb(134, 134, 134);
+}
+
+
+.endLink {
+    width: 60%;
+    margin-left: 4rem;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.links {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.6rem;
+    font-weight: 400;
+    color: rgb(134, 134, 134);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+
+.signInBtn {
+    width: 5.5rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 0.6rem;
+    border-radius: 100px;
+    background-color: #6fbc51;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.6rem;
+    font-weight: 500;
+
+}
+
+.btnContainer {
+    margin-top: 0.8rem;
+    width: 45%;
+
+}
