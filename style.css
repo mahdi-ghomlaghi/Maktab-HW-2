@@ -1,0 +1,152 @@
+/*--------------------GLOBAL--------------------*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+/*
+https://coder-coder.com/background-image-opacity/#:~:text=One%20approach%20you%20can%20use,element%20of%20the%20parent%20element.&text=Since%20the%20pseudo%2Delement%20is,without%20affecting%20the%20text%20content.
+
+++ z-index
+*/
+
+body::before {
+    content: "";
+    background-image: url(./images/backgroung.jpg);
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.45;
+}
+
+/*--------------------GLOBAL==>END--------------------*/
+
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loginPage {
+    width: 25%;
+    height: 70%;
+    /* background-color: #7877f6;
+    background-color: #ac36ee; */
+    background: rgb(120, 119, 246);
+    background: linear-gradient(180deg, rgba(120, 119, 246, 1) 0%, rgba(172, 54, 238, 1) 100%);
+    z-index: 2000;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.logoContainer {
+    width: 5rem;
+    height: 5rem;
+    background-color: white;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1.6rem;
+}
+
+.logo {
+    width: 40px;
+
+}
+
+.logTitle {
+    color: white;
+    margin-bottom: 1.1rem;
+}
+
+.inner-Container {
+    width: 90%;
+}
+
+.inputContainer {
+    border-bottom: 1px solid white;
+    margin: 1.4rem;
+
+}
+
+.inputContainer:hover {
+
+    opacity: 0.5;
+
+}
+
+.inputContainer-rememmber {
+    border-bottom: none;
+    margin: 1rem;
+
+}
+
+.inputs {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    margin-left: 0.5rem;
+}
+
+.inputs::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.8rem;
+
+}
+
+.icons {
+    color: white;
+
+}
+
+.checkbox {
+    color: white;
+    font-size: 12px;
+}
+
+.loginBtn {
+    width: 25%;
+    height: 2rem;
+    margin: .3rem;
+    border: none;
+    outline: none;
+    border-radius: 100px;
+    background-color: white;
+    color: rgb(167, 60, 239);
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.loginBtn:hover {
+    cursor: pointer;
+    color: rgb(0, 255, 34);
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.forget {
+    margin-top: 1.8rem;
+    color: white;
+    opacity: 0.9;
+    text-decoration: none;
+    font-size: 0.6rem;
+}
