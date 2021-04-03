@@ -1,0 +1,119 @@
+/*--------------------GLOBAL--------------------*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+
+/*--------------------GLOBAL==>END--------------------*/
+/*--------------------LOGIN CONTAINER--------------------*/
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loginPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25%;
+    height: 70vh;
+
+}
+
+/*--------------------LOGIN CONTAINER==>END--------------------*/
+/*--------------------CONTENT--------------------*/
+.pageTitle {
+    font-size: 1.4rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    margin-bottom: 1.7rem;
+}
+
+.avatar {
+    width: 25%;
+    border-radius: 50%;
+    margin-bottom: 2rem;
+}
+
+/*-INPUTS_CONTAINER-*/
+.inputSContainer {
+
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    height: 33%;
+}
+
+.loginInput {
+    border: none;
+    outline: none;
+    margin-bottom: 1.8rem;
+    padding: 0.5rem 0.5rem 0.4rem 0;
+    border-bottom: 1px solid rgb(202, 202, 202);
+}
+
+.loginInput:hover {
+    background-color: rgba(240, 240, 240, 0.952);
+    outline: none;
+}
+
+.loginInput::placeholder {
+    border: none;
+    font-size: 0.7rem;
+    color: 1px solid rgb(202, 202, 202);
+}
+
+.loginBtn {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin-bottom: 2.3rem;
+    padding: 0.5rem;
+    border-radius: 100px;
+    background-color: #6fbc51;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 500;
+
+}
+
+.loginBtn:hover {
+    background-color: #36be24;
+    box-shadow: 0px 2px 3px 3px rgba(0, 0, 0, 0.53);
+
+}
+
+/*-END==>INPUTS_CONTAINER-*/
+/*-LINKS_LIST-*/
+.linksList {
+    margin-top: 2rem;
+    padding: 0 0.8rem;
+
+}
+
+
+.link {
+    font-size: 0.6rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+    color: rgb(165, 164, 164);
+}
+
+.list::marker {
+    color: rgb(165, 164, 164);
+    margin: 0;
+
+}
