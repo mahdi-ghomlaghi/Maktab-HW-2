@@ -1,0 +1,34 @@
+/*--------------------GLOBAL--------------------*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+/*--------------------GLOBAL==>END--------------------*/
+/*--------------------LOGIN CONTAINER--------------------*/
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loginPage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    height: 70vh;
+    background-color: aqua;
+}
+
+/*--------------------LOGIN CONTAINER==>END--------------------*/
+/*--------------------CONTENT--------------------*/
